@@ -1,4 +1,6 @@
+import Image from 'next/image'
 import React from 'react'
+
 
 const page = () => {
   return (
@@ -55,8 +57,8 @@ const page = () => {
               <div className="row">
                 <div className="col-12 col-sm-7">
                   <div className="d-flex align-items-center gap-3 mb-5">
-                    <img
-                      src="assets/images/avatars/01.png"
+                    <Image
+                      src="/assets/images/avatars/01.png"
                       className="rounded-circle bg-grd-info p-1"
                       width={60}
                       height={60}
@@ -109,8 +111,8 @@ const page = () => {
                 </div>
                 <div className="col-12 col-sm-5">
                   <div className="welcome-back-img pt-4">
-                    <img
-                      src="assets/images/gallery/welcome-back-3.png"
+                    <Image
+                      src="/assets/images/gallery/welcome-back-3.png"
                       height={180}
                       alt=""
                     />
@@ -688,7 +690,7 @@ const page = () => {
               <div className="d-flex flex-column justify-content-between gap-4">
                 <div className="d-flex align-items-center gap-4">
                   <div className="d-flex align-items-center gap-3 flex-grow-1">
-                    <img src="assets/images/apps/17.png" width={32} alt="" />
+                    <Image src="/assets/images/apps/17.png" width={32} alt="" />
                     <p className="mb-0">فیس‌بوک</p>
                   </div>
                   <div className="">
@@ -704,7 +706,7 @@ const page = () => {
                 </div>
                 <div className="d-flex align-items-center gap-4">
                   <div className="d-flex align-items-center gap-3 flex-grow-1">
-                    <img src="assets/images/apps/18.png" width={32} alt="" />
+                    <Image src="/assets/images/apps/18.png" width={32} alt="" />
                     <p className="mb-0">لینکدین</p>
                   </div>
                   <div className="">
@@ -720,7 +722,7 @@ const page = () => {
                 </div>
                 <div className="d-flex align-items-center gap-4">
                   <div className="d-flex align-items-center gap-3 flex-grow-1">
-                    <img src="assets/images/apps/19.png" width={32} alt="" />
+                    <Image src="/assets/images/apps/19.png" width={32} alt="" />
                     <p className="mb-0">اینستاگرام</p>
                   </div>
                   <div className="">
@@ -736,7 +738,7 @@ const page = () => {
                 </div>
                 <div className="d-flex align-items-center gap-4">
                   <div className="d-flex align-items-center gap-3 flex-grow-1">
-                    <img src="assets/images/apps/20.png" width={32} alt="" />
+                    <Image src="/assets/images/apps/20.png" width={32} alt="" />
                     <p className="mb-0">اسنپ‌چت</p>
                   </div>
                   <div className="">
@@ -752,7 +754,7 @@ const page = () => {
                 </div>
                 <div className="d-flex align-items-center gap-4">
                   <div className="d-flex align-items-center gap-3 flex-grow-1">
-                    <img src="assets/images/apps/05.png" width={32} alt="" />
+                    <Image src="/assets/images/apps/05.png" width={32} alt="" />
                     <p className="mb-0">گوگل</p>
                   </div>
                   <div className="">
@@ -768,7 +770,7 @@ const page = () => {
                 </div>
                 <div className="d-flex align-items-center gap-4">
                   <div className="d-flex align-items-center gap-3 flex-grow-1">
-                    <img src="assets/images/apps/08.png" width={32} alt="" />
+                    <Image src="/assets/images/apps/08.png" width={32} alt="" />
                     <p className="mb-0">آلتابا</p>
                   </div>
                   <div className="">
@@ -784,7 +786,7 @@ const page = () => {
                 </div>
                 <div className="d-flex align-items-center gap-4">
                   <div className="d-flex align-items-center gap-3 flex-grow-1">
-                    <img src="assets/images/apps/07.png" width={32} alt="" />
+                    <Image src="/assets/images/apps/07.png" width={32} alt="" />
                     <p className="mb-0">اسپاتیفای</p>
                   </div>
                   <div className="">
@@ -843,8 +845,8 @@ const page = () => {
               <div className="user-list p-3">
                 <div className="d-flex flex-column gap-3">
                   <div className="d-flex align-items-center gap-3">
-                    <img
-                      src="assets/images/avatars/01.png"
+                    <Image
+                      src="/assets/images/avatars/01.png"
                       width={45}
                       height={45}
                       className="rounded-circle"
@@ -862,8 +864,8 @@ const page = () => {
                     </div>
                   </div>
                   <div className="d-flex align-items-center gap-3">
-                    <img
-                      src="assets/images/avatars/02.png"
+                    <Image
+                      src="/assets/images/avatars/02.png"
                       width={45}
                       height={45}
                       className="rounded-circle"
@@ -881,8 +883,8 @@ const page = () => {
                     </div>
                   </div>
                   <div className="d-flex align-items-center gap-3">
-                    <img
-                      src="assets/images/avatars/03.png"
+                    <Image
+                      src="/assets/images/avatars/03.png"
                       width={45}
                       height={45}
                       className="rounded-circle"
@@ -900,8 +902,8 @@ const page = () => {
                     </div>
                   </div>
                   <div className="d-flex align-items-center gap-3">
-                    <img
-                      src="assets/images/avatars/04.png"
+                    <Image
+                      src="/assets/images/avatars/04.png"
                       width={45}
                       height={45}
                       className="rounded-circle"
@@ -919,8 +921,8 @@ const page = () => {
                     </div>
                   </div>
                   <div className="d-flex align-items-center gap-3">
-                    <img
-                      src="assets/images/avatars/05.png"
+                    <Image
+                      src="/assets/images/avatars/05.png"
                       width={45}
                       height={45}
                       className="rounded-circle"
@@ -938,8 +940,8 @@ const page = () => {
                     </div>
                   </div>
                   <div className="d-flex align-items-center gap-3">
-                    <img
-                      src="assets/images/avatars/06.png"
+                    <Image
+                      src="/assets/images/avatars/06.png"
                       width={45}
                       height={45}
                       className="rounded-circle"
@@ -957,8 +959,8 @@ const page = () => {
                     </div>
                   </div>
                   <div className="d-flex align-items-center gap-3">
-                    <img
-                      src="assets/images/avatars/07.png"
+                    <Image
+                      src="/assets/images/avatars/07.png"
                       width={45}
                       height={45}
                       className="rounded-circle"
@@ -1042,8 +1044,8 @@ const page = () => {
                       <td>
                         <div className="d-flex align-items-center gap-3">
                           <div className="">
-                            <img
-                              src="assets/images/top-products/01.png"
+                            <Image
+                              src="/assets/images/top-products/01.png"
                               className="rounded-circle"
                               width={50}
                               height={50}
@@ -1073,8 +1075,8 @@ const page = () => {
                       <td>
                         <div className="d-flex align-items-center gap-3">
                           <div className="">
-                            <img
-                              src="assets/images/top-products/02.png"
+                            <Image
+                              src="/assets/images/top-products/02.png"
                               className="rounded-circle"
                               width={50}
                               height={50}
@@ -1104,8 +1106,8 @@ const page = () => {
                       <td>
                         <div className="d-flex align-items-center gap-3">
                           <div className="">
-                            <img
-                              src="assets/images/top-products/03.png"
+                            <Image
+                              src="/assets/images/top-products/03.png"
                               className="rounded-circle"
                               width={50}
                               height={50}
@@ -1135,8 +1137,8 @@ const page = () => {
                       <td>
                         <div className="d-flex align-items-center gap-3">
                           <div className="">
-                            <img
-                              src="assets/images/top-products/04.png"
+                            <Image
+                              src="/assets/images/top-products/04.png"
                               className="rounded-circle"
                               width={50}
                               height={50}
@@ -1166,8 +1168,8 @@ const page = () => {
                       <td>
                         <div className="d-flex align-items-center gap-3">
                           <div className="">
-                            <img
-                              src="assets/images/top-products/06.png"
+                            <Image
+                              src="/assets/images/top-products/06.png"
                               className="rounded-circle"
                               width={50}
                               height={50}
