@@ -174,8 +174,9 @@ const layout = ({ children }) => {
                       <div className="search-list d-flex flex-column gap-2">
                         <div className="search-list-item d-flex align-items-center gap-3">
                           <div className="memmber-img">
-                            <Image
+                           // <Image 
                               src="/assets/images/avatars/01.png"
+                              
                               width={32}
                               height={32}
                               className="rounded-circle"
@@ -190,8 +191,9 @@ const layout = ({ children }) => {
                         </div>
                         <div className="search-list-item d-flex align-items-center gap-3">
                           <div className="memmber-img">
-                            <Image
+                           // <Image 
                               src="/assets/images/avatars/02.png"
+                              
                               width={32}
                               height={32}
                               className="rounded-circle"
@@ -206,8 +208,9 @@ const layout = ({ children }) => {
                         </div>
                         <div className="search-list-item d-flex align-items-center gap-3">
                           <div className="memmber-img">
-                            <Image
+                           // <Image 
                               src="/assets/images/avatars/03.png"
+                              
                               width={32}
                               height={32}
                               className="rounded-circle"
@@ -243,17 +246,19 @@ const layout = ({ children }) => {
                   href="javascript:;"
                   data-bs-toggle="dropdown"
                 >
-                  <Image src="/assets/images/county/02.png" width={22} alt="" />
+                 // <Image src=" /assets/images/county/02.png" width={22} alt="" />
                 </a>
-                <ul className="dropdown-menu dropdown-menu-end">
+                <ul classNa
+                me="dropdown-menu dropdown-menu-end">
                   <li>
                     <a
                       className="dropdown-item d-flex align-items-center py-2"
                       href="javascript:;"
                     >
-                      <Image
-                        src="/assets/images/county/01.png"
+                     // <Image
+                         src="/assets/images/county/01.png"
                         width={20}
+                        
                         alt=""
                       />
                       <span className="ms-2">انگلیسی</span>
@@ -264,9 +269,10 @@ const layout = ({ children }) => {
                       className="dropdown-item d-flex align-items-center py-2"
                       href="javascript:;"
                     >
-                      <Image
-                        src="/assets/images/county/02.png"
+                     // <Image
+                         src="/assets/images/county/02.png"
                         width={20}
+                        
                         alt=""
                       />
                       <span className="ms-2">کاتالان</span>
@@ -277,9 +283,10 @@ const layout = ({ children }) => {
                       className="dropdown-item d-flex align-items-center py-2"
                       href="javascript:;"
                     >
-                      <Image
-                        src="/assets/images/county/03.png"
+                     // <Image
+                         src="/assets/images/county/03.png"
                         width={20}
+                        
                         alt=""
                       />
                       <span className="ms-2">فرانسوی</span>
@@ -290,9 +297,10 @@ const layout = ({ children }) => {
                       className="dropdown-item d-flex align-items-center py-2"
                       href="javascript:;"
                     >
-                      <Image
-                        src="/assets/images/county/04.png"
+                     // <Image
+                         src="/assets/images/county/04.png"
                         width={20}
+                        
                         alt=""
                       />
                       <span className="ms-2">بلیز</span>
@@ -303,9 +311,10 @@ const layout = ({ children }) => {
                       className="dropdown-item d-flex align-items-center py-2"
                       href="javascript:;"
                     >
-                      <Image
-                        src="/assets/images/county/05.png"
+                     // <Image
+                         src="/assets/images/county/05.png"
                         width={20}
+                        
                         alt=""
                       />
                       <span className="ms-2">کلمبیا</span>
@@ -316,9 +325,10 @@ const layout = ({ children }) => {
                       className="dropdown-item d-flex align-items-center py-2"
                       href="javascript:;"
                     >
-                      <Image
-                        src="/assets/images/county/06.png"
+                     // <Image
+                         src="/assets/images/county/06.png"
                         width={20}
+                        
                         alt=""
                       />
                       <span className="ms-2">اسپانیایی</span>
@@ -329,9 +339,10 @@ const layout = ({ children }) => {
                       className="dropdown-item d-flex align-items-center py-2"
                       href="javascript:;"
                     >
-                      <Image
-                        src="/assets/images/county/07.png"
+                     // <Image
+                         src="/assets/images/county/07.png"
                         width={20}
+                        
                         alt=""
                       />
                       <span className="ms-2">گرجی</span>
@@ -342,9 +353,10 @@ const layout = ({ children }) => {
                       className="dropdown-item d-flex align-items-center py-2"
                       href="javascript:;"
                     >
-                      <Image
-                        src="/assets/images/county/08.png"
+                     // <Image
+                         src="/assets/images/county/08.png"
                         width={20}
+                        
                         alt=""
                       />
                       <span className="ms-2">هندی</span>
@@ -389,8 +401,9 @@ const layout = ({ children }) => {
                         <div className="card rounded-4 shadow-none border mb-0">
                           <div className="card-body">
                             <div className="d-flex align-items-start gap-3">
-                              <Image
-                                src="/assets/images/megaIcons/02.png"
+                             // <Ima ge
+                                src="/assets/images/megaIcons/02.
+                                png"
                                 width={40}
                                 alt=""
                               />
@@ -410,8 +423,9 @@ const layout = ({ children }) => {
                         <div className="card rounded-4 shadow-none border mb-0">
                           <div className="card-body">
                             <div className="d-flex align-items-start gap-3">
-                              <Image
-                                src="/assets/images/megaIcons/03.png"
+                             // <Ima ge
+                                src="/assets/images/megaIcons/03.
+                                png"
                                 width={40}
                                 alt=""
                               />
@@ -431,8 +445,9 @@ const layout = ({ children }) => {
                         <div className="card rounded-4 shadow-none border mb-0">
                           <div className="card-body">
                             <div className="d-flex align-items-start gap-3">
-                              <Image
-                                src="/assets/images/megaIcons/01.png"
+                             // <Ima ge
+                                src="/assets/images/megaIcons/01.
+                                png"
                                 width={40}
                                 alt=""
                               />
@@ -452,8 +467,9 @@ const layout = ({ children }) => {
                         <div className="card rounded-4 shadow-none border mb-0">
                           <div className="card-body">
                             <div className="d-flex align-items-start gap-3">
-                              <Image
-                                src="/assets/images/megaIcons/11.png"
+                             // <Ima ge
+                                src="/assets/images/megaIcons/11.
+                                png"
                                 width={40}
                                 alt=""
                               />
@@ -473,8 +489,9 @@ const layout = ({ children }) => {
                         <div className="card rounded-4 shadow-none border mb-0">
                           <div className="card-body">
                             <div className="d-flex align-items-start gap-3">
-                              <Image
-                                src="/assets/images/megaIcons/13.png"
+                             // <Ima ge
+                                src="/assets/images/megaIcons/13.
+                                png"
                                 width={40}
                                 alt=""
                               />
@@ -494,8 +511,9 @@ const layout = ({ children }) => {
                         <div className="card rounded-4 shadow-none border mb-0">
                           <div className="card-body">
                             <div className="d-flex align-items-start gap-3">
-                              <Image
-                                src="/assets/images/megaIcons/12.png"
+                             // <Ima ge
+                                src="/assets/images/megaIcons/12.
+                                png"
                                 width={40}
                                 alt=""
                               />
@@ -515,8 +533,9 @@ const layout = ({ children }) => {
                         <div className="card rounded-4 shadow-none border mb-0">
                           <div className="card-body">
                             <div className="d-flex align-items-start gap-3">
-                              <Image
-                                src="/assets/images/megaIcons/08.png"
+                             // <Ima ge
+                                src="/assets/images/megaIcons/08.
+                                png"
                                 width={40}
                                 alt=""
                               />
@@ -536,8 +555,9 @@ const layout = ({ children }) => {
                         <div className="card rounded-4 shadow-none border mb-0">
                           <div className="card-body">
                             <div className="d-flex align-items-start gap-3">
-                              <Image
-                                src="/assets/images/megaIcons/09.png"
+                             // <Ima ge
+                                src="/assets/images/megaIcons/09.
+                                png"
                                 width={40}
                                 alt=""
                               />
@@ -573,8 +593,9 @@ const layout = ({ children }) => {
                       <div className="col border-end">
                         <div className="app-wrapper d-flex flex-column gap-2 text-center">
                           <div className="app-icon">
-                            <Image
+                           // <Image 
                               src="/assets/images/apps/01.png"
+  
                               width={36}
                               alt=""
                             />
@@ -587,8 +608,9 @@ const layout = ({ children }) => {
                       <div className="col border-end">
                         <div className="app-wrapper d-flex flex-column gap-2 text-center">
                           <div className="app-icon">
-                            <Image
+                           // <Image 
                               src="/assets/images/apps/02.png"
+  
                               width={36}
                               alt=""
                             />
@@ -601,8 +623,9 @@ const layout = ({ children }) => {
                       <div className="col">
                         <div className="app-wrapper d-flex flex-column gap-2 text-center">
                           <div className="app-icon">
-                            <Image
+                           // <Image 
                               src="/assets/images/apps/03.png"
+  
                               width={36}
                               alt=""
                             />
@@ -618,8 +641,9 @@ const layout = ({ children }) => {
                       <div className="col border-end">
                         <div className="app-wrapper d-flex flex-column gap-2 text-center">
                           <div className="app-icon">
-                            <Image
+                           // <Image 
                               src="/assets/images/apps/04.png"
+  
                               width={36}
                               alt=""
                             />
@@ -632,8 +656,9 @@ const layout = ({ children }) => {
                       <div className="col border-end">
                         <div className="app-wrapper d-flex flex-column gap-2 text-center">
                           <div className="app-icon">
-                            <Image
+                           // <Image 
                               src="/assets/images/apps/05.png"
+  
                               width={36}
                               alt=""
                             />
@@ -646,8 +671,9 @@ const layout = ({ children }) => {
                       <div className="col">
                         <div className="app-wrapper d-flex flex-column gap-2 text-center">
                           <div className="app-icon">
-                            <Image
+                           // <Image 
                               src="/assets/images/apps/06.png"
+  
                               width={36}
                               alt=""
                             />
@@ -663,8 +689,9 @@ const layout = ({ children }) => {
                       <div className="col border-end">
                         <div className="app-wrapper d-flex flex-column gap-2 text-center">
                           <div className="app-icon">
-                            <Image
+                           // <Image 
                               src="/assets/images/apps/07.png"
+  
                               width={36}
                               alt=""
                             />
@@ -677,8 +704,9 @@ const layout = ({ children }) => {
                       <div className="col border-end">
                         <div className="app-wrapper d-flex flex-column gap-2 text-center">
                           <div className="app-icon">
-                            <Image
+                           // <Image 
                               src="/assets/images/apps/08.png"
+  
                               width={36}
                               alt=""
                             />
@@ -691,8 +719,9 @@ const layout = ({ children }) => {
                       <div className="col">
                         <div className="app-wrapper d-flex flex-column gap-2 text-center">
                           <div className="app-icon">
-                            <Image
+                           // <Image 
                               src="/assets/images/apps/09.png"
+  
                               width={36}
                               alt=""
                             />
@@ -708,8 +737,9 @@ const layout = ({ children }) => {
                       <div className="col border-end">
                         <div className="app-wrapper d-flex flex-column gap-2 text-center">
                           <div className="app-icon">
-                            <Image
+                           // <Image 
                               src="/assets/images/apps/10.png"
+  
                               width={36}
                               alt=""
                             />
@@ -722,8 +752,9 @@ const layout = ({ children }) => {
                       <div className="col border-end">
                         <div className="app-wrapper d-flex flex-column gap-2 text-center">
                           <div className="app-icon">
-                            <Image
+                           // <Image 
                               src="/assets/images/apps/11.png"
+  
                               width={36}
                               alt=""
                             />
@@ -736,8 +767,9 @@ const layout = ({ children }) => {
                       <div className="col">
                         <div className="app-wrapper d-flex flex-column gap-2 text-center">
                           <div className="app-icon">
-                            <Image
+                           // <Image 
                               src="/assets/images/apps/12.png"
+  
                               width={36}
                               alt=""
                             />
@@ -846,8 +878,9 @@ const layout = ({ children }) => {
                       >
                         <div className="d-flex align-items-center gap-3">
                           <div className="">
-                            <Image
+                           // <Image 
                               src="/assets/images/avatars/01.png"
+                              
                               className="rounded-circle"
                               width={45}
                               height={45}
@@ -900,8 +933,9 @@ const layout = ({ children }) => {
                       >
                         <div className="d-flex align-items-center gap-3">
                           <div className="">
-                            <Image
+                           // <Image 
                               src="/assets/images/apps/13.png"
+  
                               className="rounded-circle"
                               width={45}
                               height={45}
@@ -930,8 +964,9 @@ const layout = ({ children }) => {
                       >
                         <div className="d-flex align-items-center gap-3">
                           <div className="">
-                            <Image
+                           // <Image 
                               src="/assets/images/apps/14.png"
+  
                               className="rounded-circle"
                               width={45}
                               height={45}
@@ -962,8 +997,9 @@ const layout = ({ children }) => {
                       >
                         <div className="d-flex align-items-center gap-3">
                           <div className="">
-                            <Image
+                           // <Image 
                               src="/assets/images/avatars/06.png"
+                              
                               className="rounded-circle"
                               width={45}
                               height={45}
@@ -1025,9 +1061,10 @@ const layout = ({ children }) => {
                   className="dropdown-toggle dropdown-toggle-nocaret"
                   data-bs-toggle="dropdown"
                 >
-                  <Image
-                    src="/assets/images/avatars/01.png"
-                    className="rounded-circle p-1 border"
+                 // <Image
+                     src="/assets/images/avatars/01.png"
+                    className="rounded
+                    -circle p-1 border"
                     width={45}
                     height={45}
                     alt=""
@@ -1036,9 +1073,10 @@ const layout = ({ children }) => {
                 <div className="dropdown-menu dropdown-user dropdown-menu-end shadow">
                   <a className="dropdown-item gap-2 py-2" href="javascript:;">
                     <div className="text-center">
-                      <Image
-                        src="/assets/images/avatars/01.png"
-                        className="rounded-circle p-1 shadow mb-3"
+                     // <Image
+                         src="/assets/images/avatars/01.png"
+                        className=
+                        "rounded-circle p-1 shadow mb-3"
                         width={90}
                         height={90}
                         alt=""
@@ -1099,9 +1137,10 @@ const layout = ({ children }) => {
         <aside className="sidebar-wrapper" data-simplebar="true">
           <div className="sidebar-header">
             <div className="logo-icon">
-              <Image
-                src="/assets/images/logo-icon.png"
+             // <Image
+                 src="/assets/images/logo-icon.png"
                 className="logo-img"
+     
                 alt=""
               />
             </div>
@@ -1807,9 +1846,10 @@ const layout = ({ children }) => {
             <div className="order-list">
               <div className="order-item d-flex align-items-center gap-3 p-3 border-bottom">
                 <div className="order-img">
-                  <Image
-                    src="/assets/images/orders/01.png"
-                    className="img-fluid rounded-3"
+                 // <Image
+                     src="/assets/images/orders/01.png"
+                    className="img-flu
+                    id rounded-3"
                     width={75}
                     alt=""
                   />
@@ -1829,9 +1869,10 @@ const layout = ({ children }) => {
               </div>
               <div className="order-item d-flex align-items-center gap-3 p-3 border-bottom">
                 <div className="order-img">
-                  <Image
-                    src="/assets/images/orders/02.png"
-                    className="img-fluid rounded-3"
+                 // <Image
+                     src="/assets/images/orders/02.png"
+                    className="img-flu
+                    id rounded-3"
                     width={75}
                     alt=""
                   />
@@ -1851,9 +1892,10 @@ const layout = ({ children }) => {
               </div>
               <div className="order-item d-flex align-items-center gap-3 p-3 border-bottom">
                 <div className="order-img">
-                  <Image
-                    src="/assets/images/orders/03.png"
-                    className="img-fluid rounded-3"
+                 // <Image
+                     src="/assets/images/orders/03.png"
+                    className="img-flu
+                    id rounded-3"
                     width={75}
                     alt=""
                   />
@@ -1873,9 +1915,10 @@ const layout = ({ children }) => {
               </div>
               <div className="order-item d-flex align-items-center gap-3 p-3 border-bottom">
                 <div className="order-img">
-                  <Image
-                    src="/assets/images/orders/04.png"
-                    className="img-fluid rounded-3"
+                 // <Image
+                     src="/assets/images/orders/04.png"
+                    className="img-flu
+                    id rounded-3"
                     width={75}
                     alt=""
                   />
@@ -1895,9 +1938,10 @@ const layout = ({ children }) => {
               </div>
               <div className="order-item d-flex align-items-center gap-3 p-3 border-bottom">
                 <div className="order-img">
-                  <Image
-                    src="/assets/images/orders/05.png"
-                    className="img-fluid rounded-3"
+                 // <Image
+                     src="/assets/images/orders/05.png"
+                    className="img-flu
+                    id rounded-3"
                     width={75}
                     alt=""
                   />
@@ -1917,9 +1961,10 @@ const layout = ({ children }) => {
               </div>
               <div className="order-item d-flex align-items-center gap-3 p-3 border-bottom">
                 <div className="order-img">
-                  <Image
-                    src="/assets/images/orders/06.png"
-                    className="img-fluid rounded-3"
+                 // <Image
+                     src="/assets/images/orders/06.png"
+                    className="img-flu
+                    id rounded-3"
                     width={75}
                     alt=""
                   />
@@ -1939,9 +1984,10 @@ const layout = ({ children }) => {
               </div>
               <div className="order-item d-flex align-items-center gap-3 p-3 border-bottom">
                 <div className="order-img">
-                  <Image
-                    src="/assets/images/orders/07.png"
-                    className="img-fluid rounded-3"
+                 // <Image
+                     src="/assets/images/orders/07.png"
+                    className="img-flu
+                    id rounded-3"
                     width={75}
                     alt=""
                   />
@@ -1961,9 +2007,10 @@ const layout = ({ children }) => {
               </div>
               <div className="order-item d-flex align-items-center gap-3 p-3 border-bottom">
                 <div className="order-img">
-                  <Image
-                    src="/assets/images/orders/08.png"
-                    className="img-fluid rounded-3"
+                 // <Image
+                     src="/assets/images/orders/08.png"
+                    className="img-flu
+                    id rounded-3"
                     width={75}
                     alt=""
                   />
