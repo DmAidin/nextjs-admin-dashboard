@@ -8,18 +8,26 @@ const Page = () => {
   const [showModal, setShowModal] = useState(false)
   const [newPost, setNewPost] = useState({ title: '', body: '' })
 
+  // 📌 دریافت لیست پست‌ها از API داخلی
   useEffect(() => {
-    axios.get('https://jsonplaceholder.typicode.com/posts')
+    axios.get('/api/posts')
       .then(res => setPosts(res.data))
       .catch(err => console.error(err))
   }, [])
 
-  const handleDelete = (id) => {
-    setPosts(posts.filter(post => post.id !== id))
+  // 📌 حذف پست از دیتابیس و UI
+  const handleDelete = async (id) => {
+    try {
+      await axios.delete('/api/posts', { data: { id } })
+      setPosts(posts.filter(post => post.id !== id))
+    } catch (error) {
+      console.error(error)
+    }
   }
 
+  // 📌 ویرایش پست (فعلاً فقط نمایش هشدار)
   const handleEdit = (post) => {
-    alert(`Edit post: ${post.title}`)
+    alert(`ویرایش مطلب: ${post.title}`)
   }
 
   const toggleModal = () => setShowModal(!showModal)
@@ -29,39 +37,43 @@ const Page = () => {
     setNewPost(prev => ({ ...prev, [name]: value }))
   }
 
-  const handleSave = (e) => {
+  // 📌 ذخیره پست جدید در دیتابیس
+  const handleSave = async (e) => {
     e.preventDefault()
-    if(newPost.title && newPost.body) {
-      const newId = posts.length ? posts[posts.length -1].id + 1 : 1
-      setPosts([...posts, { ...newPost, id: newId, userId: 1 }])
-      setNewPost({ title: '', body: '' })
-      toggleModal()
+    if (newPost.title && newPost.body) {
+      try {
+        const res = await axios.post('/api/posts', newPost)
+        setPosts([res.data, ...posts]) // اضافه به لیست
+        setNewPost({ title: '', body: '' })
+        toggleModal()
+      } catch (error) {
+        console.error(error)
+      }
     }
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-purple-600 to-purple-400 p-6">
+    <div dir="rtl" className="min-h-screen bg-gradient-to-r   p-6 font-vazir">
       <div className="max-w-7xl mx-auto bg-white rounded-lg shadow-lg p-6">
-        <h1 className="text-3xl font-bold text-purple-700 mb-6 text-center">Posts</h1>
+        <h1 className="text-3xl font-bold text-purple-700 mb-6 text-center">مطالب</h1>
 
-        <div className="flex justify-end mb-4">
+        <div className="flex justify-start mb-4">
           <button
             onClick={toggleModal}
-            className="bg-purple-700 hover:bg-purple-800 text-white px-4 py-2 rounded-md shadow-md transition"
+            className="btn btn-grd btn-grd-primary px-4 py-2 transition"
           >
-            Create New Post
+            ایجاد مطلب جدید
           </button>
         </div>
 
         <div className="overflow-x-auto">
-          <table className="min-w-full table-auto border-collapse border border-gray-300">
+          <table className="min-w-full table-auto border-collapse border border-gray-300 text-right">
             <thead className="bg-purple-100 text-purple-800 font-semibold">
               <tr>
-                <th className="border border-gray-300 px-4 py-2">ID</th>
-                <th className="border border-gray-300 px-4 py-2">Title</th>
-                <th className="border border-gray-300 px-4 py-2">Body</th>
-                <th className="border border-gray-300 px-4 py-2">User ID</th>
-                <th className="border border-gray-300 px-4 py-2 text-center">Actions</th>
+                <th className="border border-gray-300 px-4 py-2">شناسه</th>
+                <th className="border border-gray-300 px-4 py-2">عنوان</th>
+                <th className="border border-gray-300 px-4 py-2">متن</th>
+                <th className="border border-gray-300 px-4 py-2 text-center">عملیات</th>
               </tr>
             </thead>
             <tbody>
@@ -70,30 +82,22 @@ const Page = () => {
                   <td className="border border-gray-300 px-4 py-2 text-center">{post.id}</td>
                   <td className="border border-gray-300 px-4 py-2 font-semibold">{post.title}</td>
                   <td className="border border-gray-300 px-4 py-2">{post.body}</td>
-                  <td className="border border-gray-300 px-4 py-2 text-center">{post.userId}</td>
                   <td className="border border-gray-300 px-4 py-2 flex justify-center gap-3">
                     <button
                       onClick={() => handleEdit(post)}
                       className="text-purple-700 hover:text-purple-900 transition"
-                      aria-label="Edit"
+                      aria-label="ویرایش"
+                      title="ویرایش"
                     >
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" 
-                           viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                        <path strokeLinecap="round" strokeLinejoin="round" 
-                              d="M15.232 5.232l3.536 3.536M9 11l6 6m-6-6l-3 3m9-9l-3 3" />
-                      </svg>
+                      ✏️
                     </button>
-
                     <button
                       onClick={() => handleDelete(post.id)}
                       className="text-red-600 hover:text-red-800 transition"
-                      aria-label="Delete"
+                      aria-label="حذف"
+                      title="حذف"
                     >
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" 
-                           viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                        <path strokeLinecap="round" strokeLinejoin="round" 
-                              d="M19 7L5 21M5 7l14 14" />
-                      </svg>
+                      ❌
                     </button>
                   </td>
                 </tr>
@@ -102,7 +106,7 @@ const Page = () => {
           </table>
         </div>
 
-        {/* Modal */}
+        {/* 📌 مودال ایجاد پست جدید */}
         {showModal && (
           <div 
             className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
@@ -112,11 +116,11 @@ const Page = () => {
               className="bg-white rounded-lg shadow-lg p-6 max-w-md w-full"
               onClick={e => e.stopPropagation()}
             >
-              <h2 className="text-xl font-semibold text-purple-700 mb-4">Create New Post</h2>
+              <h2 className="text-xl font-semibold text-purple-700 mb-4">ایجاد مطلب جدید</h2>
               <form onSubmit={handleSave} className="space-y-4">
                 <div>
                   <label htmlFor="title" className="block text-purple-700 font-medium mb-1">
-                    Title
+                    عنوان
                   </label>
                   <input
                     type="text"
@@ -130,7 +134,7 @@ const Page = () => {
                 </div>
                 <div>
                   <label htmlFor="body" className="block text-purple-700 font-medium mb-1">
-                    Body
+                    متن
                   </label>
                   <textarea
                     id="body"
@@ -147,15 +151,15 @@ const Page = () => {
                   <button
                     type="button"
                     onClick={toggleModal}
-                    className="px-4 py-2 rounded-md border border-purple-400 text-purple-600 hover:bg-purple-100 transition"
+                    className="btn btn-grd-danger transition text-white"
                   >
-                    Cancel
+                    انصراف
                   </button>
                   <button
                     type="submit"
-                    className="bg-purple-700 hover:bg-purple-800 text-white px-4 py-2 rounded-md transition"
+                    className="btn btn-grd-info transition text-white"
                   >
-                    Save
+                    ذخیره
                   </button>
                 </div>
               </form>
