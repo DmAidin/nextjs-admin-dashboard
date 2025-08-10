@@ -1,5 +1,6 @@
 import React from 'react'
 import Script from 'next/script'
+import Image from 'next/image'
 
 const layout = ({children}) => {
   return (
@@ -167,7 +168,7 @@ const layout = ({children}) => {
                 <div className="search-list d-flex flex-column gap-2">
                   <div className="search-list-item d-flex align-items-center gap-3">
                     <div className="memmber-img">
-                      <img
+                      <Image
                         src="/assets/images/avatars/01.png"
                         width={32}
                         height={32}
@@ -181,7 +182,7 @@ const layout = ({children}) => {
                   </div>
                   <div className="search-list-item d-flex align-items-center gap-3">
                     <div className="memmber-img">
-                      <img
+                      <Image
                         src="/assets/images/avatars/02.png"
                         width={32}
                         height={32}
@@ -195,7 +196,7 @@ const layout = ({children}) => {
                   </div>
                   <div className="search-list-item d-flex align-items-center gap-3">
                     <div className="memmber-img">
-                      <img
+                      <Image
                         src="/assets/images/avatars/03.png"
                         width={32}
                         height={32}
@@ -230,7 +231,7 @@ const layout = ({children}) => {
             href="javascript:;"
             data-bs-toggle="dropdown"
           >
-            <img src="/assets/images/county/02.png" width={22} alt="" />
+            <Image src="/assets/images/county/02.png" width={22} alt="" />
           </a>
           <ul className="dropdown-menu dropdown-menu-end">
             <li>
@@ -238,7 +239,7 @@ const layout = ({children}) => {
                 className="dropdown-item d-flex align-items-center py-2"
                 href="javascript:;"
               >
-                <img src="/assets/images/county/01.png" width={20} alt="" />
+                <Image src="/assets/images/county/01.png" width={20} alt="" />
                 <span className="ms-2">انگلیسی</span>
               </a>
             </li>
@@ -247,7 +248,7 @@ const layout = ({children}) => {
                 className="dropdown-item d-flex align-items-center py-2"
                 href="javascript:;"
               >
-                <img src="/assets/images/county/02.png" width={20} alt="" />
+                <Image src="/assets/images/county/02.png" width={20} alt="" />
                 <span className="ms-2">کاتالان</span>
               </a>
             </li>
@@ -256,7 +257,7 @@ const layout = ({children}) => {
                 className="dropdown-item d-flex align-items-center py-2"
                 href="javascript:;"
               >
-                <img src="/assets/images/county/03.png" width={20} alt="" />
+                <Image src="/assets/images/county/03.png" width={20} alt="" />
                 <span className="ms-2">فرانسوی</span>
               </a>
             </li>
@@ -265,7 +266,7 @@ const layout = ({children}) => {
                 className="dropdown-item d-flex align-items-center py-2"
                 href="javascript:;"
               >
-                <img src="/assets/images/county/04.png" width={20} alt="" />
+                <Image src="/assets/images/county/04.png" width={20} alt="" />
                 <span className="ms-2">بلیز</span>
               </a>
             </li>
@@ -274,7 +275,7 @@ const layout = ({children}) => {
                 className="dropdown-item d-flex align-items-center py-2"
                 href="javascript:;"
               >
-                <img src="/assets/images/county/05.png" width={20} alt="" />
+                <Image src="/assets/images/county/05.png" width={20} alt="" />
                 <span className="ms-2">کلمبیا</span>
               </a>
             </li>
@@ -283,7 +284,7 @@ const layout = ({children}) => {
                 className="dropdown-item d-flex align-items-center py-2"
                 href="javascript:;"
               >
-                <img src="/assets/images/county/06.png" width={20} alt="" />
+                <Image src="/assets/images/county/06.png" width={20} alt="" />
                 <span className="ms-2">اسپانیایی</span>
               </a>
             </li>
@@ -292,7 +293,7 @@ const layout = ({children}) => {
                 className="dropdown-item d-flex align-items-center py-2"
                 href="javascript:;"
               >
-                <img src="/assets/images/county/07.png" width={20} alt="" />
+                <Image src="/assets/images/county/07.png" width={20} alt="" />
                 <span className="ms-2">گرجی</span>
               </a>
             </li>
@@ -301,7 +302,7 @@ const layout = ({children}) => {
                 className="dropdown-item d-flex align-items-center py-2"
                 href="javascript:;"
               >
-                <img src="/assets/images/county/08.png" width={20} alt="" />
+                <Image src="/assets/images/county/08.png" width={20} alt="" />
                 <span className="ms-2">هندی</span>
               </a>
             </li>
@@ -344,7 +345,7 @@ const layout = ({children}) => {
                   <div className="card rounded-4 shadow-none border mb-0">
                     <div className="card-body">
                       <div className="d-flex align-items-start gap-3">
-                        <img
+                        <Image
                           src="/assets/images/megaIcons/02.png"
                           width={40}
                           alt=""
@@ -365,7 +366,7 @@ const layout = ({children}) => {
                   <div className="card rounded-4 shadow-none border mb-0">
                     <div className="card-body">
                       <div className="d-flex align-items-start gap-3">
-                        <img
+                        <Image
                           src="/assets/images/megaIcons/03.png"
                           width={40}
                           alt=""
@@ -386,7 +387,7 @@ const layout = ({children}) => {
                   <div className="card rounded-4 shadow-none border mb-0">
                     <div className="card-body">
                       <div className="d-flex align-items-start gap-3">
-                        <img
+                        <Image
                           src="/assets/images/megaIcons/01.png"
                           width={40}
                           alt=""
@@ -407,7 +408,7 @@ const layout = ({children}) => {
                   <div className="card rounded-4 shadow-none border mb-0">
                     <div className="card-body">
                       <div className="d-flex align-items-start gap-3">
-                        <img
+                        <Image
                           src="/assets/images/megaIcons/11.png"
                           width={40}
                           alt=""
@@ -428,7 +429,7 @@ const layout = ({children}) => {
                   <div className="card rounded-4 shadow-none border mb-0">
                     <div className="card-body">
                       <div className="d-flex align-items-start gap-3">
-                        <img
+                        <Image
                           src="/assets/images/megaIcons/13.png"
                           width={40}
                           alt=""
@@ -449,7 +450,7 @@ const layout = ({children}) => {
                   <div className="card rounded-4 shadow-none border mb-0">
                     <div className="card-body">
                       <div className="d-flex align-items-start gap-3">
-                        <img
+                        <Image
                           src="/assets/images/megaIcons/12.png"
                           width={40}
                           alt=""
@@ -470,7 +471,7 @@ const layout = ({children}) => {
                   <div className="card rounded-4 shadow-none border mb-0">
                     <div className="card-body">
                       <div className="d-flex align-items-start gap-3">
-                        <img
+                        <Image
                           src="/assets/images/megaIcons/08.png"
                           width={40}
                           alt=""
@@ -491,7 +492,7 @@ const layout = ({children}) => {
                   <div className="card rounded-4 shadow-none border mb-0">
                     <div className="card-body">
                       <div className="d-flex align-items-start gap-3">
-                        <img
+                        <Image
                           src="/assets/images/megaIcons/09.png"
                           width={40}
                           alt=""
@@ -528,7 +529,7 @@ const layout = ({children}) => {
                 <div className="col border-end">
                   <div className="app-wrapper d-flex flex-column gap-2 text-center">
                     <div className="app-icon">
-                      <img src="/assets/images/apps/01.png" width={36} alt="" />
+                      <Image src="/assets/images/apps/01.png" width={36} alt="" />
                     </div>
                     <div className="app-name">
                       <p className="mb-0">جیمیل</p>
@@ -538,7 +539,7 @@ const layout = ({children}) => {
                 <div className="col border-end">
                   <div className="app-wrapper d-flex flex-column gap-2 text-center">
                     <div className="app-icon">
-                      <img src="/assets/images/apps/02.png" width={36} alt="" />
+                      <Image src="/assets/images/apps/02.png" width={36} alt="" />
                     </div>
                     <div className="app-name">
                       <p className="mb-0">اسکایپ</p>
@@ -548,7 +549,7 @@ const layout = ({children}) => {
                 <div className="col">
                   <div className="app-wrapper d-flex flex-column gap-2 text-center">
                     <div className="app-icon">
-                      <img src="/assets/images/apps/03.png" width={36} alt="" />
+                      <Image src="/assets/images/apps/03.png" width={36} alt="" />
                     </div>
                     <div className="app-name">
                       <p className="mb-0">اسلک</p>
@@ -561,7 +562,7 @@ const layout = ({children}) => {
                 <div className="col border-end">
                   <div className="app-wrapper d-flex flex-column gap-2 text-center">
                     <div className="app-icon">
-                      <img src="/assets/images/apps/04.png" width={36} alt="" />
+                      <Image src="/assets/images/apps/04.png" width={36} alt="" />
                     </div>
                     <div className="app-name">
                       <p className="mb-0">یوتیوب</p>
@@ -571,7 +572,7 @@ const layout = ({children}) => {
                 <div className="col border-end">
                   <div className="app-wrapper d-flex flex-column gap-2 text-center">
                     <div className="app-icon">
-                      <img src="/assets/images/apps/05.png" width={36} alt="" />
+                      <Image src="/assets/images/apps/05.png" width={36} alt="" />
                     </div>
                     <div className="app-name">
                       <p className="mb-0">گوگل</p>
@@ -581,7 +582,7 @@ const layout = ({children}) => {
                 <div className="col">
                   <div className="app-wrapper d-flex flex-column gap-2 text-center">
                     <div className="app-icon">
-                      <img src="/assets/images/apps/06.png" width={36} alt="" />
+                      <Image src="/assets/images/apps/06.png" width={36} alt="" />
                     </div>
                     <div className="app-name">
                       <p className="mb-0">اینستاگرام</p>
@@ -594,7 +595,7 @@ const layout = ({children}) => {
                 <div className="col border-end">
                   <div className="app-wrapper d-flex flex-column gap-2 text-center">
                     <div className="app-icon">
-                      <img src="/assets/images/apps/07.png" width={36} alt="" />
+                      <Image src="/assets/images/apps/07.png" width={36} alt="" />
                     </div>
                     <div className="app-name">
                       <p className="mb-0">اسپاتیفای</p>
@@ -604,7 +605,7 @@ const layout = ({children}) => {
                 <div className="col border-end">
                   <div className="app-wrapper d-flex flex-column gap-2 text-center">
                     <div className="app-icon">
-                      <img src="/assets/images/apps/08.png" width={36} alt="" />
+                      <Image src="/assets/images/apps/08.png" width={36} alt="" />
                     </div>
                     <div className="app-name">
                       <p className="mb-0">یاهو</p>
@@ -614,7 +615,7 @@ const layout = ({children}) => {
                 <div className="col">
                   <div className="app-wrapper d-flex flex-column gap-2 text-center">
                     <div className="app-icon">
-                      <img src="/assets/images/apps/09.png" width={36} alt="" />
+                      <Image src="/assets/images/apps/09.png" width={36} alt="" />
                     </div>
                     <div className="app-name">
                       <p className="mb-0">فیسبوک</p>
@@ -627,7 +628,7 @@ const layout = ({children}) => {
                 <div className="col border-end">
                   <div className="app-wrapper d-flex flex-column gap-2 text-center">
                     <div className="app-icon">
-                      <img src="/assets/images/apps/10.png" width={36} alt="" />
+                      <Image src="/assets/images/apps/10.png" width={36} alt="" />
                     </div>
                     <div className="app-name">
                       <p className="mb-0">فیگما</p>
@@ -637,7 +638,7 @@ const layout = ({children}) => {
                 <div className="col border-end">
                   <div className="app-wrapper d-flex flex-column gap-2 text-center">
                     <div className="app-icon">
-                      <img src="/assets/images/apps/11.png" width={36} alt="" />
+                      <Image src="/assets/images/apps/11.png" width={36} alt="" />
                     </div>
                     <div className="app-name">
                       <p className="mb-0">پی‌پال</p>
@@ -647,7 +648,7 @@ const layout = ({children}) => {
                 <div className="col">
                   <div className="app-wrapper d-flex flex-column gap-2 text-center">
                     <div className="app-icon">
-                      <img src="/assets/images/apps/12.png" width={36} alt="" />
+                      <Image src="/assets/images/apps/12.png" width={36} alt="" />
                     </div>
                     <div className="app-name">
                       <p className="mb-0">عکس</p>
@@ -745,7 +746,7 @@ const layout = ({children}) => {
                 >
                   <div className="d-flex align-items-center gap-3">
                     <div className="">
-                      <img
+                      <Image
                         src="/assets/images/avatars/01.png"
                         className="rounded-circle"
                         width={45}
@@ -795,7 +796,7 @@ const layout = ({children}) => {
                 >
                   <div className="d-flex align-items-center gap-3">
                     <div className="">
-                      <img
+                      <Image
                         src="/assets/images/apps/13.png"
                         className="rounded-circle"
                         width={45}
@@ -823,7 +824,7 @@ const layout = ({children}) => {
                 >
                   <div className="d-flex align-items-center gap-3">
                     <div className="">
-                      <img
+                      <Image
                         src="/assets/images/apps/14.png"
                         className="rounded-circle"
                         width={45}
@@ -851,7 +852,7 @@ const layout = ({children}) => {
                 >
                   <div className="d-flex align-items-center gap-3">
                     <div className="">
-                      <img
+                      <Image
                         src="/assets/images/avatars/06.png"
                         className="rounded-circle"
                         width={45}
@@ -910,7 +911,7 @@ const layout = ({children}) => {
             className="dropdown-toggle dropdown-toggle-nocaret"
             data-bs-toggle="dropdown"
           >
-            <img
+            <Image
               src="/assets/images/avatars/01.png"
               className="rounded-circle p-1 border"
               width={45}
@@ -921,7 +922,7 @@ const layout = ({children}) => {
           <div className="dropdown-menu dropdown-user dropdown-menu-end shadow">
             <a className="dropdown-item gap-2 py-2" href="javascript:;">
               <div className="text-center">
-                <img
+                <Image
                   src="/assets/images/avatars/01.png"
                   className="rounded-circle p-1 shadow mb-3"
                   width={90}
@@ -978,7 +979,7 @@ const layout = ({children}) => {
   <aside className="sidebar-wrapper" data-simplebar="true">
     <div className="sidebar-header">
       <div className="logo-icon">
-        <img src="/assets/images/logo-icon.png" className="logo-img" alt="" />
+        <Image src="/assets/images/logo-icon.png" className="logo-img" alt="" />
       </div>
       <div className="logo-name flex-grow-1">
         <h5 className="mb-0">Maxton</h5>
@@ -1619,7 +1620,7 @@ const layout = ({children}) => {
       <div className="order-list">
         <div className="order-item d-flex align-items-center gap-3 p-3 border-bottom">
           <div className="order-img">
-            <img
+            <Image
               src="/assets/images/orders/01.png"
               className="img-fluid rounded-3"
               width={75}
@@ -1641,7 +1642,7 @@ const layout = ({children}) => {
         </div>
         <div className="order-item d-flex align-items-center gap-3 p-3 border-bottom">
           <div className="order-img">
-            <img
+            <Image
               src="/assets/images/orders/02.png"
               className="img-fluid rounded-3"
               width={75}
@@ -1663,7 +1664,7 @@ const layout = ({children}) => {
         </div>
         <div className="order-item d-flex align-items-center gap-3 p-3 border-bottom">
           <div className="order-img">
-            <img
+            <Image
               src="/assets/images/orders/03.png"
               className="img-fluid rounded-3"
               width={75}
@@ -1685,7 +1686,7 @@ const layout = ({children}) => {
         </div>
         <div className="order-item d-flex align-items-center gap-3 p-3 border-bottom">
           <div className="order-img">
-            <img
+            <Image
               src="/assets/images/orders/04.png"
               className="img-fluid rounded-3"
               width={75}
@@ -1707,7 +1708,7 @@ const layout = ({children}) => {
         </div>
         <div className="order-item d-flex align-items-center gap-3 p-3 border-bottom">
           <div className="order-img">
-            <img
+            <Image
               src="/assets/images/orders/05.png"
               className="img-fluid rounded-3"
               width={75}
@@ -1729,7 +1730,7 @@ const layout = ({children}) => {
         </div>
         <div className="order-item d-flex align-items-center gap-3 p-3 border-bottom">
           <div className="order-img">
-            <img
+            <Image
               src="/assets/images/orders/06.png"
               className="img-fluid rounded-3"
               width={75}
@@ -1751,7 +1752,7 @@ const layout = ({children}) => {
         </div>
         <div className="order-item d-flex align-items-center gap-3 p-3 border-bottom">
           <div className="order-img">
-            <img
+            <Image
               src="/assets/images/orders/07.png"
               className="img-fluid rounded-3"
               width={75}
@@ -1773,7 +1774,7 @@ const layout = ({children}) => {
         </div>
         <div className="order-item d-flex align-items-center gap-3 p-3 border-bottom">
           <div className="order-img">
-            <img
+            <Image
               src="/assets/images/orders/08.png"
               className="img-fluid rounded-3"
               width={75}
