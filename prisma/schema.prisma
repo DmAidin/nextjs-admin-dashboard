@@ -7,6 +7,7 @@ generator client {
   provider = "prisma-client-js"
 }
 
+<<<<<<< HEAD
 model News {
   id        String   @id @default(auto()) @map("_id") @db.ObjectId
   title     String
@@ -15,3 +16,12 @@ model News {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
+=======
+model Post {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  body      String
+  createdAt DateTime @default(now())
+}
+
+>>>>>>> 0f8666af3b02f404e5b2218b6cdd7212c096f1bc

@@ -23,5 +23,14 @@
     "eslint-config-next": "15.4.6",
     "prisma": "^6.13.0",
     "tailwindcss": "^4"
+<<<<<<< HEAD
   }
 }
+=======
+  },
+  "prisma": {
+  "seed": "node prisma/seed.js"
+}
+
+}
+>>>>>>> 0f8666af3b02f404e5b2218b6cdd7212c096f1bc

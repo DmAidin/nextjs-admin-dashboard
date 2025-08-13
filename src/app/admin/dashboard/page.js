@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 'use client'
+=======
+
+import React from 'react'
+>>>>>>> 0f8666af3b02f404e5b2218b6cdd7212c096f1bc
 
 import Script from 'next/script'
 import React, { useEffect, useState, useMemo } from 'react'
@@ -96,6 +101,7 @@ const Page = () => {
   }, [posts, searchTerm, categoryFilter, sortOrder])
 
   return (
+<<<<<<< HEAD
     <>
       <Script src="https://code.jquery.com/jquery-3.6.0.min.js" strategy="beforeInteractive" onLoad={() => console.log('✅ jQuery loaded')} />
       <Script src="https://cdn.jsdelivr.net/npm/apexcharts" strategy="beforeInteractive" onLoad={() => console.log('✅ ApexCharts loaded')} />
@@ -305,6 +311,11 @@ const Page = () => {
         </div>
       </div>
     </>
+=======
+    <div>
+  
+    </div>
+>>>>>>> 0f8666af3b02f404e5b2218b6cdd7212c096f1bc
   )
 }
 

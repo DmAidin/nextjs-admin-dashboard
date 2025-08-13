@@ -34,4 +34,8 @@ main()
   })
   .finally(async () => {
     await prisma.$disconnect()
+<<<<<<< HEAD
   })
+=======
+  })
+>>>>>>> 0f8666af3b02f404e5b2218b6cdd7212c096f1bc
